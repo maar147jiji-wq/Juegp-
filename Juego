@@ -1,0 +1,17 @@
+print("Salva a Austrudam")
+
+bienvenida=str(input("Bienvenido viajero al reino Austrudam...¿Cuál es tu nombre? :"))
+print(bienvenida)
+print("Bien, viajero este reino esta en peligro necesitamos ayuda")
+listo=str(input("¿Aceptas el reto? (si: acepto/no:acepto) :"))
+def dileSi():
+    if listo == "si":
+        return "¡Vamos!"
+    elif listo== "no":
+        return "¡Largate!"
+print(dileSi())
+
+vida="10"
+monedas="20"
+
+def 
