@@ -14,4 +14,7 @@ print(dileSi())
 vida="10"
 monedas="20"
 
-def 
+def zonaSur(vida,monedas):
+    print ("La zona sur de nuestro hermoso reino provee el alimento a la mayoria de la población")
+    
+    
