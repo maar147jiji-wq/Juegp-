@@ -14,7 +14,26 @@ print(dileSi())
 vida="10"
 monedas="20"
 
-def zonaSur(vida,monedas):
-    print ("La zona sur de nuestro hermoso reino provee el alimento a la mayoria de la población")
-    
-    
+def mounstruo_Zona_Sur(vida,monedas):
+    print (" - La zona sur de nuestro hermoso reino provee el alimento a la mayoria de la población")
+    print (" - Pero un monstruo devorador se ha estado comiendo todo el cultivo, ¡tienes que destruirlo!")
+    print ("Vas con mucho sigilo hacia los campos listo para lo que pueda pasar")
+    print("""
+      (  O   O  )
+      (     ∆     )
+      (   \_____/   )
+     /|               |\
+    /_|_______________|_\
+    """)
+    desicion=int(input("¿Qué vas a hacer aventurero? -- Darle comida evnevenada(1) -- Atacar al monstruo(2) -- Darle comida podrida(3):"))
+
+    if desicion = 1:
+    monedas=monedas-1
+    print ("perdiste monedas")
+    elif desicion = 2:
+    vida=vida-3
+    moonedas=-1
+    print ( 
+    elif desicion = 3:
+    vida=vida-2
+    vida=vida-1
