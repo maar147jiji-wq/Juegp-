@@ -15,7 +15,7 @@ print(dileSi())
 vida=10
 monedas=20
 
-def mounstruo_Zona_Sur(vida,monedas):
+def mounstruo_Zona_Norte(vida,monedas):
     print (" La zona sur de nuestro hermoso reino provee el alimento a la mayoria de la población")
     print (" Pero un monstruo devorador se ha estado comiendo todo el cultivo, ¡tienes que destruirlo!")
     print ("Vas con mucho sigilo hacia los campos listo para lo que pueda pasar")
@@ -41,5 +41,116 @@ def mounstruo_Zona_Sur(vida,monedas):
       print ("perdiste vida y monedas tipo 1")
     return vida, monedas
 
-vida, monedas= mounstruo_Zona_Sur(vida, monedas)
+vida, monedas= mounstruo_Zona_Norte(vida, monedas)
+print ("tienes vida a nivel" , vida, "y tu riqueza quedo de esta cantidad",monedas)
+
+def mounstruo_Zona_Norte(vida,monedas):
+    print (" La zona sur de nuestro hermoso reino provee el alimento a la mayoria de la población")
+    print (" Pero un monstruo devorador se ha estado comiendo todo el cultivo, ¡tienes que destruirlo!")
+    print ("Vas con mucho sigilo hacia los campos listo para lo que pueda pasar")
+    print(r"""
+      (  O   O  )
+      (     ∆    
+    """)
+    
+    desicion=int(input("¿Qué vas a hacer aventurero? -- Darle comida evnevenada(1) -- Atacar al monstruo(2) -- Darle comida podrida(3):"))
+    if desicion == 1:
+      monedas=monedas-1
+      print ("perdiste monedas")
+    elif desicion == 2:
+      vida=vida-3
+      monedas=-1
+      print ("perdiste vida y monedas tipo 2")
+    elif desicion == 3:
+      vida=vida-2
+      vida=vida-1
+      print ("perdiste vida y monedas tipo 1")
+    return vida, monedas
+
+vida, monedas= mounstruo_Zona_Norte(vida, monedas)
+print ("tienes vida a nivel" , vida, "y tu riqueza quedo de esta cantidad",monedas)
+
+def mounstruo_Zona_Este(vida,monedas):
+    print (" La zona sur de nuestro hermoso reino provee el alimento a la mayoria de la población")
+    print (" Pero un monstruo devorador se ha estado comiendo todo el cultivo, ¡tienes que destruirlo!")
+    print ("Vas con mucho sigilo hacia los campos listo para lo que pueda pasar")
+    print(r"""
+      (  O   O  )
+      (     ∆     )
+      (   \_____/   |\
+    /_|_______________|_\
+    """)
+    
+    desicion=int(input("¿Qué vas a hacer aventurero? -- Darle comida evnevenada(1) -- Atacar al monstruo(2) -- Darle comida podrida(3):"))
+    if desicion == 1:
+      monedas=monedas-1
+      print ("perdiste monedas")
+    elif desicion == 2:
+      vida=vida-3
+      monedas=-1
+      print ("perdiste vida y monedas tipo 2")
+    elif desicion == 3:
+      vida=vida-2
+      vida=vida-1
+      print ("perdiste vida y monedas tipo 1")
+    return vida, monedas
+
+vida, monedas= mounstruo_Zona_Este(vida, monedas)
+print ("tienes vida a nivel" , vida, "y tu riqueza quedo de esta cantidad",monedas)
+
+def mounstruo_Zona_Oeste(vida,monedas):
+    print (" La zona sur de nuestro hermoso reino provee el alimento a la mayoria de la población")
+    print (" Pero un monstruo devorador se ha estado comiendo todo el cultivo, ¡tienes que destruirlo!")
+    print ("Vas con mucho sigilo hacia los campos listo para lo que pueda pasar")
+    print(r"""
+      (  O   O  )
+      ( )
+      (   \_____/   )
+     /|               |\
+    /_|_______________|_\
+    """)
+    
+    desicion=int(input("¿Qué vas a hacer aventurero? -- Darle comida evnevenada(1) -- Atacar al monstruo(2) -- Darle comida podrida(3):"))
+    if desicion == 1:
+      monedas=monedas-1
+      print ("perdiste monedas")
+    elif desicion == 2:
+      vida=vida-3
+      monedas=-1
+      print ("perdiste vida y monedas tipo 2")
+    elif desicion == 3:
+      vida=vida-2
+      vida=vida-1
+      print ("perdiste vida y monedas tipo 1")
+    return vida, monedas
+
+vida, monedas= mounstruo_Zona_Oeste(vida, monedas)
+print ("tienes vida a nivel" , vida, "y tu riqueza quedo de esta cantidad",monedas)
+
+def mounstruo_Zona_Centro(vida,monedas):
+    print (" La zona sur de nuestro hermoso reino provee el alimento a la mayoria de la población")
+    print (" Pero un monstruo devorador se ha estado comiendo todo el cultivo, ¡tienes que destruirlo!")
+    print ("Vas con mucho sigilo hacia los campos listo para lo que pueda pasar")
+    print(r"""
+      (  O   O  )
+      (     ∆     )
+      (   \_____/   )
+     /|            
+    """)
+    
+    desicion=int(input("¿Qué vas a hacer aventurero? -- Darle comida evnevenada(1) -- Atacar al monstruo(2) -- Darle comida podrida(3):"))
+    if desicion == 1:
+      monedas=monedas-1
+      print ("perdiste monedas")
+    elif desicion == 2:
+      vida=vida-3
+      monedas=-1
+      print ("perdiste vida y monedas tipo 2")
+    elif desicion == 3:
+      vida=vida-2
+      vida=vida-1
+      print ("perdiste vida y monedas tipo 1")
+    return vida, monedas
+
+vida, monedas= mounstruo_Zona_Centro(vida, monedas)
 print ("tienes vida a nivel" , vida, "y tu riqueza quedo de esta cantidad",monedas)
