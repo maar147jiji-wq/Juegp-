@@ -1,0 +1,143 @@
+import sys  # IMPORTACIÓN AGREGADA
+
+print("Sal del cine")
+
+bienvenida = input("Bienvenido platillo a nuestro espacio...¿Cuál es tu nombre delicioso aperitivo? :")
+print(bienvenida)
+print("Estás aquí solo y atrapado para que juguemos un rato contigo tienes que superar un pequeño jueguito")
+listo = input("si no aceptas te comeremos así que dime ¿Aceptas? (si: acepto/no:acepto) :")
+
+def dileSi():
+    if listo == "si":
+        return "Vamos delicioso alimento"
+    elif listo == "no":
+        print("¡Muere!")
+        sys.exit()
+
+print(dileSi())
+
+vida = 10
+oportunidad = 20
+
+def primeraentidad(vida, oportunidad):
+    print(" La curiosidad te llevará a la perdición tierna presa del miedo")
+    print(" Aquí no tenías que llegar pero ahora estás aquí ")
+    print("Sientes que alguien llega por detrás, sientes esa mirada fija y amenazadora")
+    print(r"""
+      (  O   O  )
+      (    ∆    )
+      (   /_\   )
+     /    |      \
+    /    / \      \
+    """)
+
+    desicion = int(input("¿No vas a seguir adelante? -- Continuar sin rechistar(1) -- Voltear a mirar(2) -- Agacharte a respirar(3):"))
+    if desicion == 1:
+        oportunidad = oportunidad - 1
+        print("perdiste oportunidades para escapar, mientras más te adentras menos sentirás el aire de la libertad")
+    elif desicion == 2:
+        vida = vida - 3
+        oportunidad = oportunidad - 1
+        print("perdiste vida y oportunidades para escapar, te tiene en la mira; desaparece antes de que voltees y empiezas a seguir")
+    elif desicion == 3:
+        vida = vida - 1
+        print("perdiste vida, arañazos se sienten en tu espalda y solo tienes que intentar pararte para seguir a algo que no entiendes ")
+    return vida, oportunidad
+
+vida, oportunidad = primeraentidad(vida, oportunidad)
+print("tienes vida a nivel", vida, "y tus opciones para salir quedó de esta cantidad", oportunidad)
+
+def segundaentidad(vida, oportunidad):
+    print(" Pasillos y pasillos oscuros por los cuales tienes que pasar de ahora en adelante")
+    print(" un pequeño roedor sin escapatoria que es tan divertido de ver, ¿Qué habrás hecho para quedar aquí?")
+    print("Aparece una persona de servicios generales pero empieza a sacar tanto garras como colmillos")
+    print(r"""
+      .-.-.-.-.-.-.
+     /  _       _  \
+    |  ( )     ( )  |
+    |   -       -   |
+     \   \_____/   /
+      \  /\"\"\"\"\   /
+       \/     \ /
+       v       v
+      /|        |\
+     /_|_________|_\
+    """)
+
+    desicion = int(input("¿Qué harás lindo ser? --Entrar a la primera puerta que puedes(1) -- Ponerte a la defensiva(2) – Correr al lado contrario(3):"))
+    if desicion == 1:
+        oportunidad = oportunidad - 1
+        print("perdiste oportunidades para escapar, te encierras pero al final ni sabes en qué te estás metiendo")
+    elif desicion == 2:
+        vida = vida - 3
+        oportunidad = oportunidad - 1
+        print("perdiste vida y oportunidades para escapar, ahora serás su nuevo juguete pero igual entras a cualquier puerta")
+    elif desicion == 3:
+        vida = vida - 1
+        print("perdiste parte de tu piel, obviamente te iba a alcanzar y saborear un trozo de tu tersa piel lo detuvo, entras a la primera puerta que ves")
+    return vida, oportunidad
+
+vida, oportunidad = segundaentidad(vida, oportunidad)
+print("tienes vida a nivel", vida, "y tus opciones para salir quedó de esta cantidad", oportunidad)
+
+def terceraentidad(vida, oportunidad):
+    print(" La vida tan efímera o la muerte tan eterna, al final son solo iguales para alguien tan débil")
+    print(" Viniste por solo una película y te adentraste a ella ")
+    print("La pantalla ilumina el cuarto mientras fantasmas pasar a tu lado, empieza una película donde muestra una gran figura escalofriante que empieza a salirse de la pantalla")
+    print(r"""
+         __     __
+        /  \___/  \
+       /           \
+      /    _____    \
+     |    (     )    |
+     |     \___/     |
+     |    _/   \_    |
+     \___/       \___/
+        GORILA GIGANTE
+    """)
+
+    desicion = int(input("¿Te gusta el terror?, sientelo en vivo  -- Te ocultas entre las sillas(1) -- Vas a la puerta que conduce al lobby(2) -- Buscas algo con que defenderte(3):"))
+    if desicion == 1:
+        oportunidad = oportunidad - 1
+        print("ya sintió tu presencia y te busca con el olfato, aprovechas para salir pero ¿Te seguirá?")
+    elif desicion == 2:
+        vida = vida - 3
+        oportunidad = oportunidad - 1
+        print("saliste hacia la boca del lobo, donde estarán todos los demás")
+    elif desicion == 3:
+        vida = vida - 1
+        print("Te haces el héroe, te agarra entre sus garras y te arranca un brazo; lograste salir mientras el otro ser disfruta tu sabor")
+    return vida, oportunidad
+
+vida, oportunidad = terceraentidad(vida, oportunidad)
+print("tienes vida a nivel", vida, "y tus opciones para salir quedó de esta cantidad", oportunidad)
+
+def cuartaentidad(vida, oportunidad):
+    print(" Luces calidad, olor a comida pero será que si es comida real o solo es tu mente sufriendo del miedo para saciar está ansiedad desde necesidades innecesarias para el momento")
+    print(" solo ves como el lugar flota según la oscuridad fuera de esas puertas de cristal. Detrás tuyo sientes que saliva cae en tu cara con un aliento pestido que llega y se siente desde tu nuca")
+    print("Gracias por jugar")
+    print(r"""
+      (  O   O  )
+      (    ∆    )
+      (   /_\   )
+      (  <   >  )
+      ( <     > )
+      <<       >>
+     << DIENTES >>
+    """)
+
+    desicion = int(input("¿Creo que tendrás el mejor sabor que las anteriores víctimas? – Empiezas a rezar(1) -- Levantas la cabeza(2) -- bajas y te arrodillas en el suelo(3):"))
+    if desicion == 1:
+        oportunidad = oportunidad - 1
+        print("No existes más, tal vez ese perdón que puede que siempre has necesitado ")
+    elif desicion == 2:
+        vida = vida - 3
+        oportunidad = oportunidad - 1
+        print("viste los ojos de la bestia, ojos llenos de odio y una sádica sonrisa")
+    elif desicion == 3:
+        vida = vida - 1
+        print("te devora de un solo bocado siendo más fácil de tragar")
+    return vida, oportunidad
+
+vida, oportunidad = cuartaentidad(vida, oportunidad)
+print("tienes vida a nivel", vida, "y tus opciones para salir quedó de esta cantidad", oportunidad)
